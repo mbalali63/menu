@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+
+}
+
+#hero-section {
+	width:100%;
+	display:grid;
+	align-items:start;
+	justify-content:start;
+	grid-template-columns:repeat(2,1fr);
+	padding:25px;
+	border:1px solid white;
+}
+#hamburger-box {
+	background-color:transparent;
+	grid-column:1/2;
+	justify-self:start;
+	cursor:pointer;
+}
+
+#mode-selector-box {
+	grid-column:2/3;
+	justify-self:end;
+	cursor:pointer;
+}
+h1 {
+	font-family:"Imperial Script", cursive;
+	font-size:40px;
+	grid-column:1/3;
+	color:white;
+	padding:29px 0px 70px 0px;
+}
+
+
+#menu-bar {
+	position:absolute;
+	top:8%;
+	width:99%;
+	padding-top:0;
+	/*padding-top:128px;*/
+	background-color:black;
+	transition: display 0.5s;
+	height:0;
+	transition: height 1s, padding-top 1s;
+	overflow:hidden;
+}
+
+
+.menu-item {
+	width:100%;
+	border:1px solid transparent;
+	transition: background-color 0.5s;
+}
+.menu-item p {
+	font-family:'Roboto', sans-serif;
+	font-size:25px;
+	margin:20px auto;
+	color:white;
+	cursor:pointer;
 }
