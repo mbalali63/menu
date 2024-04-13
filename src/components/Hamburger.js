@@ -6,7 +6,10 @@ export default function Hamburger({handleHamburger}) {
 		<section id="hamburger-box">
 			<div className="icon-container">
 				<img src={hamburgerIcon}
-				     onClick = {() => {handleHamburger()}}
+			 	     id = "hamburger-img"
+				     onClick = {() => {
+					     handleHamburger()
+				     }}
 				/>
 			</div>
 		</section>

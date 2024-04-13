@@ -10,9 +10,9 @@ export default function HeroSection({hamburgerOpen, mode, handleSetMode}) {
 	const R_Color = (mode === 'light') ? HS_R_L_ : HS_R_D_
 	return (
 		<section id = "hero-section"
-			 style = {{background:  'linear-gradient(to bottom,' +  L_Color+ ',' + R_Color + ')'}}
+			 style = {{background:  'linear-gradient(to right,' +  L_Color+ ',' + R_Color + ')'}}
 		>
-			<Hamburger handleHamburger = {hamburgerOpen}/>
+			<Hamburger handleHamburger = {hamburgerOpen} />
 			<ModeSelector mode={mode} handleSetMode = {handleSetMode}/>
 			<h1>Rayan Web Hub</h1>
 		</section>
